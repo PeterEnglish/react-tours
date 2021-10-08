@@ -9,7 +9,7 @@ const Tours = ({ tours, removeTour }) => {
       </div>
       <div>
         {tours.map((tour) => {
-          //Note use of spread operator to get all tour sub-items as props
+          //Note use of spread operator to get all tour items as props
           return <Tour key={tour.id} {...tour} removeTour={removeTour} />;
         })}
       </div>
